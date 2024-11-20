@@ -12,6 +12,7 @@ import ourStory from './assets/our_story.png'
 // Components
 import Button from "./components/button/Button.jsx";
 import ProductCard from "./components/productcard/ProductCard.jsx";
+import Tile from "./components/tile/Tile.jsx";
 
 function App() {
     return (
@@ -52,30 +53,27 @@ function App() {
                 />
             </main>
             <footer>
-                <section>
+                <Tile>
                     <h2>The brand</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque impedit labore
                         nulla numquam quia quis quo sequi tempore veritatis!</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolore dolorem fuga
                         hic impedit nemo quaerat quam repudiandae similique.</p>
-                </section>
-                <section>
+                </Tile>
+                <Tile>
                     <img src={brand} alt="photo with logo"/>
-                </section>
-                <section>
+                </Tile>
+                <Tile>
                     <img src={ourStory} alt="photo of two women hugging"/>
-                </section>
-                <section>
+                </Tile>
+                <Tile>
                     <h2>Our Story</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eos iure nisi qui. Commodi
                         magni minus provident. Dignissimos error ex, explicabo nam nisi qui sed tempora? Amet explicabo
                         hic placeat!</p>
-                </section>
+                </Tile>
             </footer>
-            <Button></Button>
-            <Tile></Tile>
         </>
-
     )
 }
 
